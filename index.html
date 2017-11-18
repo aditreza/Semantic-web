@@ -13,6 +13,10 @@
   <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/favicon_152x152px.png">
   <!-- Title -->
   <title>AditReza - Personal Portfolio</title>
+  <!-- CSS Plugins -->
+  <link rel="stylesheet" href="assets/plugins/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/plugins/animate.css/animate.min.css" />
+  <link rel="stylesheet" href="assets/plugins/slick-carousel/slick/slick.css" />
   <!-- CSS Icons -->
   <link rel="stylesheet" href="assets/css/themify-icons.css" />
   <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css" />
@@ -30,17 +34,241 @@
   </div>
   <!-- End Loader -->
 
+  <!-- Start Navigation -->
+  <nav id="navigation" class="navigation-panel dark">
+    <div class="navigation-inner">
+      <!-- Navigation Primary -->
+      <ul class="nav nav-primary-panel">
+        <li class="nav-item">
+          <a href="#start" class="nav-link">Start</a>
+        </li>
+        <li class="nav-item">
+          <a href="#resume" class="nav-link">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a href="#services" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#blog" class="nav-link">Latest Posts</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End Navigation -->
+
+  <!-- Start Navigation Toggle -->
+  <a id="navigation-toggle" class="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+  <!-- End Navigation Toggle -->
+
   <!-- ^^^^^ -->
   <!-- Start Content -->
   <div id="content">
-    <section>
 
+    <!-- Start - Section - Start/Header -->
+    <section id="start" class="section section-home-basic fullheight dark bg-dark" data-scheme="dark" data-local-scroll>
+      <!-- BG Image -->
+      <div class="bg-image-container">
+          <img src="assets/img/photos/developer/home-alternative.jpg" alt="">
+        </div>
+        <!-- Section Content -->
+        <div class="section-content">
+          <div class="container-wide" data-local-scroll>
+            <div class="row align-items-center">
+              <div class="col-xl-7 col-10">
+                <h1 class="mb-0">
+                  <span class="typing">Hi! I’m
+                    <strong>Aditya Reza</strong> - experienced Creative Design from Jakarta ...</span>
+                  <a href="#resume" class="btn-go show-after-typing ml-4">
+                    <i class="fa fa-angle-down"></i>
+                  </a>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Points -->
+        <div class="points-container">
+          <!-- Point -->
+          <a href="#resume" class="point" data-x="30%" data-y="15%">
+            <span class="point-indicator">
+              <svg class="point-indicator-circle" viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="23" stroke-width="2"></circle>
+              </svg>
+              <span class="point-indicator-hover"></span>
+              <svg class="point-indicator-plus" viewBox="0 0 48 48">
+                <path d="M24,24 v-10 v20" stroke-width="2"></path>
+                <path d="M24,24 h-10 h20" stroke-width="2"></path>
+              </svg>
+            </span>
+            <span class="point-title">Check out my skills!</span>
+          </a>
+          <!-- Point -->
+          <a href="#services" class="point" data-x="40%" data-y="40%">
+            <span class="point-indicator">
+              <svg class="point-indicator-circle" viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="23" stroke-width="2"></circle>
+              </svg>
+              <span class="point-indicator-hover"></span>
+              <svg class="point-indicator-plus" viewBox="0 0 48 48">
+                <path d="M24,24 v-10 v20" stroke-width="2"></path>
+                <path d="M24,24 h-10 h20" stroke-width="2"></path>
+              </svg>
+            </span>
+            <span class="point-title">What can I do for you?</span>
+          </a>
+          <!-- Point -->
+          <a href="#portfolio" class="point" data-x="80%" data-y="50%">
+            <span class="point-indicator">
+              <svg class="point-indicator-circle" viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="23" stroke-width="2"></circle>
+              </svg>
+              <span class="point-indicator-hover"></span>
+              <svg class="point-indicator-plus" viewBox="0 0 48 48">
+                <path d="M24,24 v-10 v20" stroke-width="2"></path>
+                <path d="M24,24 h-10 h20" stroke-width="2"></path>
+              </svg>
+            </span>
+            <span class="point-title">Look at my works!</span>
+          </a>
+        </div>
     </section>
+    <!-- End - Section - Start/Header -->
+
+    <!-- Start Next Section -->
+    <!-- End Next Section -->
+
+    <!-- Start - Section - Contact -->
+    <section id="contact" class="section section-contact fullheight bg-dark dark" data-scheme="dark">
+      <!-- BG Map -->
+      <div id="google-map" class="bg-map bg-map-overlay dark" data-latitude="-6.209717" data-longitude="107.026793"></div>
+      <!-- Section Content -->
+      <div class="section-content pos-v-center">
+        <div class="container">
+          <!-- Section Header -->
+          <div class="section-header">
+            <img src="assets/img/photos/developer/avatar-sm.png" alt="" class="section-header-image">
+            <div class="section-header-content">
+              <span class="typing">Stay in touch with me!</span>
+              <div class="section-header-caption show-after-typing222">
+                <div class="module">
+                  <span class="mr-2">Where am I located?</span>
+                  <label class="selector">
+                    <input type="checkbox" class="selector-input" data-toggle="contact-map">
+                    <span class="selector-indicator"></span>
+                  </label>
+                </div>
+                <div class="module">
+                  <span class="mr-2">Have a question?</span>
+                  <a href="mailto:lete.note3@gmail.com" class="btn btn-primary btn-sm">Write to me!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Start Info Contact -->
+          <div class="row section-contact-content pt-lg-5 pb-lg-5">
+            <div class="col-md-4">
+              <h6 class="text-muted mb-2">Address:</h6>
+              <address class="lead">
+                Hibrida Raya 17,
+                <br> Taman Wisma Asri,
+                <br> Bekasi Utara, Indonesia
+              </address>
+            </div>
+            <div class="col-md-4">
+              <h6 class="text-muted mb-2">E-mail:</h6>
+              <p class="mb-5">
+                <a href="#" class="lead link-inherit">lete.note3@gmail.com</a>
+              </p>
+              <h6 class="text-muted mb-2">Phone:</h6>
+              <a href="#" class="lead link-inherit">+62 859 5977 7098</a>
+            </div>
+            <div class="col-md-4">
+              <h6 class="text-muted mb-2">Skype:</h6>
+              <p class="mb-5">
+                <a href="#" class="lead link-inherit">lete.note3</a>
+              </p>
+              <h6 class="text-muted mb-2">Find me on:</h6>
+              <a href="https://www.facebook.com" target="_blank" class="icon icon-circle icon-hover icon-sm icon-facebook">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" class="icon icon-circle icon-hover icon-sm icon-twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" class="icon icon-circle icon-hover icon-sm icon-linkedin">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <!-- End Info Contact -->
+        </div>
+      </div>
+    </section>
+    <!-- Start - Section - Contact -->
   </div>
   <!-- End Content -->
   <!-- ^^^^^ -->
 
+  <!-- Start Footer -->
+  <footer id="footer" class="bg-dark dark">
+    <div class="footer-content">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-5 mb-md-0 text-center text-md-left">
+            <p class="mb-2">
+              <span class="typing">Would you like to get my CV in PDF?</span>
+            </p>
+            <a href="assets/download/resume-arp-fixed-fix-creative-design.pdf" class="btn btn-primary btn-sm" download>Download my CV</a>
+          </div>
+          <div class="spread-icons col-md-6 text-center text-md-right">
+            <a href="https://www.facebook.com/" target="_blank" class="icon icon-sm icon-white icon-hover">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="icon icon-sm icon-white icon-hover">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" class="icon icon-sm icon-white icon-hover">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <p class="text-muted mt-3 mb-0">reza aditya 2017.
+              <br> Made with love by
+              <a href="#" target="_blank" class="link-inherit">blet</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- JS Plugins -->
+  <script src="assets/plugins/jquery/dist/jquery.min.js"></script>
+  <script src="assets/plugins/jquery.appear/jquery.appear.js"></script>
+  <script src="assets/plugins/tether/dist/js/tether.min.js"></script>
+  <script src="assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="assets/plugins/jquery.scrollto/jquery.scrollTo.min.js"></script>
+  <script src="assets/plugins/jquery.localscroll/jquery.localScroll.min.js"></script>
+  <script src="assets/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/plugins/masonry-layout/dist/masonry.pkgd.min.js"></script>
+  <script src="assets/plugins/slick-carousel/slick/slick.min.js"></script>
+  <script src="assets/plugins/waypoints/lib/jquery.waypoints.min.js"></script>
+  <script src="assets/plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="assets/plugins/typed.js/dist/typed.min.js"></script>
+  <script src="assets/plugins/easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+  <script src="assets/plugins/snapsvg/dist/snap.svg-min.js"></script>
+  <script src="assets/plugins/isotope-layout/dist/isotope.pkgd.min.js"></script>
+  <!-- JS Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrLPcMGei8TP1nckoYweraEybXnWgqq3A"></script>
+  <!-- JS Core -->
+  <script src="assets/js/core.min.js"></script>
 </body>
-<!-- JS Core -->
-<script src="assets/js/core.min.js"></script>
 </html>
